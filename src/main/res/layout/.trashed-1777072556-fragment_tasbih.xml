@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary_green"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    tools:context=".ui.fragment.TasbihFragment">
+
+    <!-- TASBIH BODY -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_tasbih_body"
+        android:layout_width="@dimen/tasbih_outer_width"
+        android:layout_height="@dimen/tasbih_outer_height"
+        android:layout_marginTop="@dimen/spacing_md"
+        android:layout_marginBottom="@dimen/spacing_md"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <View
+            android:id="@+id/v_tasbih_outer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/tasbih_shape_green"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <View
+            android:id="@+id/v_tasbih_inner"
+            android:layout_width="@dimen/tasbih_inner_width"
+            android:layout_height="@dimen/tasbih_inner_height"
+            android:background="@drawable/tasbih_shape_black_center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_label_tasbih"
+            style="@style/TasbihDisplayLabel"
+            android:text="@string/label_digital_tasbih"
+            app:layout_constraintTop_toTopOf="@id/v_tasbih_inner"
+            app:layout_constraintStart_toStartOf="@id/v_tasbih_inner"
+            app:layout_constraintEnd_toEndOf="@id/v_tasbih_inner"
+            android:layout_marginTop="@dimen/spacing_lg" />
+
+        <FrameLayout
+            android:id="@+id/fl_display"
+            android:layout_width="@dimen/display_width"
+            android:layout_height="@dimen/display_height"
+            android:layout_marginTop="@dimen/spacing_sm"
+            app:layout_constraintTop_toBottomOf="@id/tv_label_tasbih"
+            app:layout_constraintStart_toStartOf="@id/v_tasbih_inner"
+            app:layout_constraintEnd_toEndOf="@id/v_tasbih_inner">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/digital_display_bg" />
+
+            <TextView
+                android:id="@+id/tv_display_count"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingEnd="@dimen/display_padding_end"
+                android:paddingStart="@dimen/display_padding_end"
+                android:text="@string/default_count_display"
+                android:textColor="@color/display_text_dim"
+                android:textSize="@dimen/display_text_size"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="60sp"
+                android:textStyle="bold"
+                android:textDirection="ltr"
+                android:contentDescription="@string/cd_display_count"
+                tools:text="00000" />
+
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/btn_main_count"
+            android:layout_width="@dimen/main_btn_size"
+            android:layout_height="@dimen/main_btn_size"
+            android:background="@drawable/selector_main_count_btn"
+            android:contentDescription="@string/cd_btn_count"
+            android:hapticFeedbackEnabled="true"
+            app:layout_constraintTop_toBottomOf="@id/fl_display"
+            app:layout_constraintBottom_toBottomOf="@id/v_tasbih_inner"
+            app:layout_constraintStart_toStartOf="@id/v_tasbih_inner"
+            app:layout_constraintEnd_toEndOf="@id/v_tasbih_inner"
+            app:layout_constraintVertical_bias="0.4" />
+
+        <ImageButton
+            android:id="@+id/btn_small_action"
+            android:layout_width="@dimen/small_btn_size"
+            android:layout_height="@dimen/small_btn_size"
+            android:background="@drawable/selector_small_btn"
+            android:contentDescription="@string/cd_btn_reset"
+            app:layout_constraintTop_toTopOf="@id/btn_main_count"
+            app:layout_constraintBottom_toBottomOf="@id/btn_main_count"
+            app:layout_constraintStart_toEndOf="@id/btn_main_count"
+            app:layout_constraintEnd_toEndOf="@id/v_tasbih_inner"
+            app:layout_constraintVertical_bias="0.7" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

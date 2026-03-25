@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/btn_main_shadow" />
+        </shape>
+    </item>
+
+    <item
+        android:bottom="@dimen/main_btn_border"
+        android:left="@dimen/main_btn_border"
+        android:right="@dimen/main_btn_border"
+        android:top="@dimen/main_btn_border">
+        <shape android:shape="oval">
+            <gradient
+                android:endColor="@color/gradient_end"
+                android:startColor="@color/gradient_start"
+                android:type="sweep" />
+        </shape>
+    </item>
+
+</layer-list>

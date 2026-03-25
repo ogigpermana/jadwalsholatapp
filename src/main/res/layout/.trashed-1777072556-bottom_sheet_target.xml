@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/bg_black_center">
+
+    <!-- Judul -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/target_title"
+        android:textColor="@color/text_white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Target saat ini -->
+    <TextView
+        android:id="@+id/tv_current_target"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_white_dim"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Label Preset -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/target_preset_label"
+        android:textColor="@color/text_white_dim"
+        android:textSize="13sp"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <Button
+            android:id="@+id/btn_preset_33"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="33"
+            android:backgroundTint="@color/btn_action_dark"
+            android:textColor="@color/text_white" />
+
+        <Button
+            android:id="@+id/btn_preset_99"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="99"
+            android:backgroundTint="@color/btn_action_dark"
+            android:textColor="@color/text_white" />
+
+        <Button
+            android:id="@+id/btn_preset_1000"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1000"
+            android:backgroundTint="@color/btn_action_dark"
+            android:textColor="@color/text_white" />
+
+    </LinearLayout>
+
+    <!-- Label custom input -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/target_custom_label"
+        android:textColor="@color/text_white_dim"
+        android:textSize="13sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/et_custom_target"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/target_custom_hint"
+        android:inputType="number"
+        android:textColor="@color/text_white"
+        android:textColorHint="@color/text_white_dim"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btn_set_target"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/target_btn_set"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/text_white"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn_clear_target"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/target_btn_clear"
+        android:backgroundTint="@color/btn_action_dark"
+        android:textColor="@color/text_white"
+        android:layout_marginBottom="8dp" />
+
+</LinearLayout>
+
+
+
+
+
+
+

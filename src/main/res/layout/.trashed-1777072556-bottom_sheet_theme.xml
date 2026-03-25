@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/bg_black_center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilih Tema Warna"
+        android:textColor="@color/text_white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Row 1: Hijau, Merah, Biru -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/btn_theme_green"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="🌿 Hijau"
+            android:backgroundTint="#2D763F"
+            android:textColor="@color/text_white"
+			android:elevation="6dp"
+            android:stateListAnimator="@null" />
+
+        <Button
+            android:id="@+id/btn_theme_red"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="🔴 Merah"
+            android:backgroundTint="#8B2020"
+            android:textColor="@color/text_white" 
+			android:elevation="6dp"
+            android:stateListAnimator="@null"/>
+
+        <Button
+            android:id="@+id/btn_theme_blue"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="🔵 Biru"
+            android:backgroundTint="#1A4F7A"
+            android:textColor="@color/text_white" 
+			android:elevation="6dp"
+            android:stateListAnimator="@null"/>
+
+    </LinearLayout>
+
+    <!-- Row 2: Ungu, Orange, Custom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/btn_theme_purple"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="🟣 Ungu"
+            android:backgroundTint="#5B2D8B"
+            android:textColor="@color/text_white"
+			android:elevation="6dp"
+            android:stateListAnimator="@null" />
+
+        <Button
+            android:id="@+id/btn_theme_orange"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="🟠 Orange"
+            android:backgroundTint="#8B5A1A"
+            android:textColor="@color/text_white" 
+			android:elevation="6dp"
+            android:stateListAnimator="@null"/>
+
+        <Button
+            android:id="@+id/btn_theme_custom"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="🎨 Custom"
+            android:backgroundTint="#555555"
+            android:textColor="@color/text_white" 
+			android:elevation="6dp"
+            android:stateListAnimator="@null"/>
+
+    </LinearLayout>
+
+</LinearLayout>

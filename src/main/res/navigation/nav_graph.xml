@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/tasbihFragment">
+
+    <fragment
+        android:id="@+id/tasbihFragment"
+        android:name="com.igoy86.digitaltasbih.ui.fragment.TasbihFragment"
+        android:label="@string/menu_tasbih" />
+
+    <fragment
+        android:id="@+id/prayerScheduleFragment"
+        android:name="com.igoy86.digitaltasbih.ui.fragment.PrayerScheduleFragment"
+        android:label="@string/menu_prayer" />
+
+    <fragment
+        android:id="@+id/qiblaCompassFragment"
+        android:name="com.igoy86.digitaltasbih.ui.fragment.QiblaCompassFragment"
+        android:label="@string/menu_qibla" />
+
+</navigation>

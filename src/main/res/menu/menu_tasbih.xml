@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <group android:id="@+id/group_features">
+        <item android:id="@+id/menu_star" android:title="@string/cd_btn_star" android:icon="@drawable/ic_star_solid" />
+        <item android:id="@+id/menu_target" android:title="@string/cd_btn_target" android:icon="@drawable/ic_target" />
+        <item android:id="@+id/menu_settings" android:title="@string/cd_btn_settings" android:icon="@drawable/ic_settings_solid" />
+        <item android:id="@+id/menu_puzzle" android:title="@string/cd_btn_puzzle" android:icon="@drawable/ic_puzzle" />
+    </group>
+
+    <group android:id="@+id/group_actions">
+        <item android:id="@+id/menu_save" android:title="@string/btn_save" />
+        <item android:id="@+id/menu_saved_dhikr" android:title="@string/btn_saved_dhikr" />
+    </group>
+
+</menu>
